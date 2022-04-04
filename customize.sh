@@ -11,7 +11,7 @@ PRINT() {
     ui_print ""
     sleep 2
     ui_print "• More info about this module please read on cacheplus official repository."
-    ui_print "• https://github.com/kageyuki-takeru/cacheplus"}
+    ui_print "• https://github.com/kageyuki-takeru/cacheplus"
     ui_print ""
     sleep 2
 }
