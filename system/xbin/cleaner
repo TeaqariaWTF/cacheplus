@@ -1,0 +1,27 @@
+#!/system/bin/sh
+MODDIR=${0%/*}
+
+# Cache Cleaner (clear cache of all apps by typing 'su -c cleaner' in Terminal)
+clear
+
+echo "Cache+ (Magisk Module)"
+echo "• A module that allows your device"
+echo "• To clear cache of all apps on every boot."
+echo ""
+sleep 1
+echo "• And you can manually clear cache of all apps"
+echo "• By typing 'su -c cleaner' in Terminal."
+echo ""
+sleep 1
+
+echo "! Error..."
+[ ! "$(whoami)" == "root" ] && echo "! Run as root user only." && exit 1
+
+echo "Do you want to clear cache of all apps? <yes/no>"
+printf "[CHOICE]: "
+read clear
+if [ "$clear" == "yes" ]; then
+    find /data/data/*/cache/* -delete &>/dev/null
+    find /sdcard/Android/data/*/cache/* -delete &>/dev/null
+    echo "Done, all caches have been cleared!"
+fi
