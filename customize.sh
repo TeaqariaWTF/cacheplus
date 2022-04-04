@@ -14,6 +14,7 @@ PRINT() {
     ui_print "• https://github.com/kageyuki-takeru/cacheplus"}
     ui_print ""
     sleep 2
+}
 
 EXEC() {
     ui_print "Installing..."
