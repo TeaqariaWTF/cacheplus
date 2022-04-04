@@ -23,5 +23,7 @@ read choice
 if [ "$choice" == "yes" ]; then
     find /data/data/*/cache/* -delete &>/dev/null
     find /sdcard/Android/data/*/cache/* -delete &>/dev/null
+    sleep 0.7
+    echo ""
     echo "Done, all caches have been cleared!"
 fi
