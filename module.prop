@@ -1,0 +1,7 @@
+id=cacheplus
+name=Cache+
+version=1.0.0
+versionCode=1
+author=Taka🌿
+description=Clear cache of all apps on every boot, and you can type 'su -c cleaner' in Terminal to clear cache.
+updateJson=https://raw.githack.com/kageyuki-takeru/cacheplus/main/update.json
