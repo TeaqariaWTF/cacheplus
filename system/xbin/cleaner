@@ -11,7 +11,7 @@ echo "- To clear cache of all apps on every boot."
 echo ""
 sleep 1
 echo "- And you can manually clear cache"
-echo "- By typing `su -c cleaner` in Terminal."
+echo "- By typing 'su -c cleaner' in Terminal."
 echo ""
 sleep 1
 
