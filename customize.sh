@@ -6,7 +6,7 @@ PRINT() {
     ui_print "• To clear cache of all apps on every boot."
     ui_print ""
     sleep 2
-    ui_print "• And you can manually clear cache of all apps"
+    ui_print "• And you can manually clear cache"
     ui_print "• By typing 'su -c cleaner' in Terminal."
     ui_print ""
     sleep 2
