@@ -5,23 +5,31 @@ MODDIR=${0%/*}
 clear
 
 echo "Cache+ (Magisk Module)"
-sleep 0.7
-echo "• A module that allows your device"
-echo "• To clear cache of all apps on every boot."
+sleep 1
+echo "- A module that allows your device"
+echo "- To clear cache of all apps on every boot."
 echo ""
-sleep 0.7
-echo "• And you can manually clear cache"
-echo "• By typing 'su -c cleaner' in Terminal."
+sleep 1
+echo "- And you can manually clear cache"
+echo "- By typing `su -c cleaner` in Terminal."
 echo ""
-sleep 0.7
+sleep 1
 
 [ ! "$(whoami)" == "root" ] && echo "! Error..." && echo "! Run as root user only." && exit 1
 
 echo "Do you want to clear cache of all apps? <yes/no>"
 printf "Your choice: "
-read clear
-if [ "$clear" == "yes" ]; then
+read choice1
+if [ "$choice1" == "yes" ]; then
     find /data/data/*/cache/* -delete &>/dev/null
     find /sdcard/Android/data/*/cache/* -delete &>/dev/null
     echo "Done, all caches have been cleared!"
+    echo ""
+    sleep 0.7
+    echo "Exit the Terminal? <yes/no>"
+    printf "Your choice: "
+    read choice2
+    if [ "$choice2" == "yes" ]; then
+        exit
+    fi
 fi
