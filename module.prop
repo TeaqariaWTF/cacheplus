@@ -3,5 +3,5 @@ name=Cache+
 version=1.0.0
 versionCode=1
 author=Taka🌿
-description=Clear cache of all apps on every boot, and you can manually clear cache by typing `su -c cleaner` in Terminal.
+description=Clear cache of all apps on every boot, and you can manually clear cache by typing 'su -c cleaner' in Terminal.
 updateJson=https://raw.githack.com/kageyuki-takeru/cacheplus/main/update.json
