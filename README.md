@@ -1,5 +1,5 @@
 # Cache+ (Magisk Module)
-A module that allows your device to clear cache of all apps on every boot and you can manually clear cache of all apps by typing `su -c cleaner` in Terminal.
+A module that allows your device to clear cache of all apps on every boot and you can manually clear cache by typing `su -c cleaner` in Terminal.
 
 ## Author
 * Taka🌿
