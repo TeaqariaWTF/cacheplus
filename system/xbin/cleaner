@@ -19,17 +19,9 @@ sleep 1
 
 echo "Do you want to clear cache of all apps? <yes/no>"
 printf "Your choice: "
-read choice1
-if [ "$choice1" == "yes" ]; then
+read choice
+if [ "$choice" == "yes" ]; then
     find /data/data/*/cache/* -delete &>/dev/null
     find /sdcard/Android/data/*/cache/* -delete &>/dev/null
     echo "Done, all caches have been cleared!"
-    echo ""
-    sleep 0.7
-    echo "Exit the Terminal? <yes/no>"
-    printf "Your choice: "
-    read choice2
-    if [ "$choice2" == "yes" ]; then
-        exit
-    fi
 fi
